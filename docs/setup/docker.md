@@ -74,8 +74,10 @@ $ docker-compose up
 Then, run the following command to setup the databases:
 
 ```bash
-$ docker exec <container-id> mix do ecto.create, ecto.migrate
+$ docker exec -it <container-id> mix do ecto.create, ecto.migrate
+// Type `Y` key twice if you're asked.
 ```
+
 
 ### 1b: Using the pre-built Docker image
 
